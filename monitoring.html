@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        Employee Monitoring System
+        <input type="text" placeholder="Search your projects or employee">
+        <input type="button" name="search" value="Search">
+        <a href="mprofile.html">Profile</a>
+        <a href="monitoringSettings.html">Settings</a>
+        <a href="index.html">Logout</a>
+        <hr>
+        <div align="left">
+            <a href="manager.html">Dashboard</a><br>
+            <a href="monitoring.html">Monitoring</a><br>
+            <a href="productivity.html">Productivity</a><br>
+            <a href="listofemployees.html">Employees</a><br>
+            <a href="mprofile.html">My Account</a><br>
+        </div>
+        Select Employee:
+        <datalist id="employees">
+            <option value="Employee1">Employee1</option>
+            <option value="Employee2">Employee2</option>
+            <option value="Employee3">Employee3</option>
+        </datalist>
+        <input type="text" name="employee" list="employees"><br><br><br>
+        <input type="button" name="monitored" value="Monitored On">
+    </body>
+</html>
