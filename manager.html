@@ -1,27 +1,33 @@
+<!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
+        <title>Employee Monitoring System</title>
         <style>
         </style>
+        <link rel="stylesheet" type="text/css" href="style1.css">
     </head>
     <body>
-        Employee Monitoring System
-        <input type="text" placeholder="Search your projects or employee">
-        <input type="button" name="search" value="Search">
-        <a href="mprofile.html">Profile</a>
-        <a href="monitoringSettings.html">Settings</a>
-        <a href="index.html">Logout</a>
-        <hr>
-        <div align="left">
+        <div class="sidebar" align="left">
+            <div class="btn"><logo>M</logo>ONITOR</div>
+            <div class="btn" id="dashboard" onclick="location.href='manager.html'">Dashboard</div>
+            <div class="btn" id="monitoring" onclick="location.href='monitoring.html'">Monitoring</div>
+            <div class="btn" id="productivity" onclick="location.href='productivity.html'">Productivity</div>
+            <div class="btn" id="employees" onclick="location.href='listofemployees.html'">Employees</div>
+            <div class="btn" id="profile" onclick="location.href='mprofile.html'">My Account</div>
+        </div>
+        <ul class="header">
+            <li><a class="btn2" id="show">Show</a></li>
+            <li><input type="text" size="72" id="searchtext" placeholder="Search your projects or employee"></li>
+            <li><a class="btn2" id="search" onclick="location.href='mprofile.html'">Search</a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='mprofile.html'">Profile</a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='monitoringSettings.html'">Settings</a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='index.html'">Logout</a></li>
+        </ul>
+        <!--<div align="left">
             Current date<input type="date" id="date">
             <a href="manager.html">Add Widgets</a>
         </div>
-        <hr>
-        <div align="left">
-            <a href="manager.html">Dashboard</a><br>
-            <a href="monitoring.html">Monitoring</a><br>
-            <a href="productivity.html">Productivity</a><br>
-            <a href="listofemployees.html">Employees</a><br>
-            <a href="mprofile.html">My Account</a><br>
-        </div>
+        <hr>-->
     </body>
 </html>

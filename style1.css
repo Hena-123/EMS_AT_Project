@@ -1,0 +1,81 @@
+logo
+{
+    background-color:rgb(76,76,255);
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+    padding:4px;
+}
+div.sidebar
+{
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    background-color:rgb(48,48,48);
+    max-width:150px;
+    height: 725px;
+}
+div.btn
+{
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    font-size:15px;
+    cursor:pointer;
+    background-color:transparent;
+    border: none;
+    font-size: 25px;
+}
+div.btn:hover
+{
+    background-color:rgba(48,48,48,0.5);
+}
+ul.header
+{
+    list-style-type: none;
+    left:145px;
+    right:0;
+    top:0px;
+    position: fixed;
+    width:1437px;
+    background-color:rgba(76,76,255,0.8);
+}
+ul.header li
+{
+    display: inline;
+}
+ul.header li input[type="text"]
+{
+    padding: 15px 0px;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    border-bottom:none;
+    font-size: 25px;
+    background-color:transparent;
+    color:white;
+}
+ul.header li input[type="text"]::placeholder
+{
+    color:white;
+}
+ul.header li a[class="btn2"]
+{
+    padding: 15px 0px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    height:35px;
+    background-color:transparent;
+    border: none;
+}
+ul.header li a[class="btn2"]:hover
+{
+    background-color:rgba(76,76,255,0.9);
+}
+::placeholder
+{
+    font-size: 25px;
+}

@@ -1,14 +1,58 @@
 <html>
     <head>
         <style>
+            body
+            {
+                background-color: rgb(173,216,230);
+            }
+            img
+            {
+            }
+            ul.tab
+            {
+                list-style-type: none;
+                background-image: url("index_background1.jpg");
+                color:white;
+                padding: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            ul.tab li
+            {
+                display: inline;
+            }
+            ul.tab li a
+            {
+                text-decoration: none;
+                font-size: 25px;
+                cursor: pointer;
+                background-color:transparent;
+                color:white;
+                padding: 20px;
+            }
+            ul.tab li a:hover
+            {
+                background-color:crimson;
+                color: white;
+            }
+            h1
+            {
+                background-image: url("index_background1.jpg");
+                color:white;
+                padding: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         </style>
     </head>
     <body>
         <h1>Employee Monitoring System</h1>
-        <hr>
-        <a href="register.html">Sign Up</a>
-        <a href="login.html">Login</a>
-        <hr>
-        <img src="EMS.jpg">
+        <ul class="tab">
+            <li><a href="register.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <center>
+            <img src="front_image.jpg">
+        </center>
     </body>
 </html>

@@ -1,28 +1,37 @@
+<!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" type="text/css" href="logincss.css">
+        <title>Employee Monitoring System</title>
         <style>
         </style>
     </head>
     <body>
-        <a href="owner.html">Owner</a>
-        <a href="manager.html">Manager</a>
-        <a href="employee.html">Employee</a>
-        <br><br>
+        <ul class="user">
+            <li><a class="u1" href="owner.html">Owner</a></li>
+            <li><a class="u1" href="manager.html">Manager</a></li>
+            <li><a class="u1" href="employee.html">Employee</a></li>
+        </ul>
+        <br><br><br>
+        <div class="logintab">
         <form action="" method="post">
-            <table border="2">
+            <table>
                 <tr>
-                    <td colspan="2">Employee Monitoring System</td>
+                    <td colspan="2"><center><logo>E</logo>MPLOYEE MONITORING SYSTEM</center></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="text" id="email" name="email" placeholder="email address" autofocus required></td>
+                    <td colspan="2"><center><input type="text" id="email" name="email" placeholder="email address" autofocus required></center></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="password" id="password" name="password" placeholder="password" required></td>
+                    <td colspan="2"><center><input type="password" id="password" name="password" placeholder="password" required></center></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" name="button" id="button" value="Login"></td>
+                    <td colspan="2"><center><input type="submit" name="button" id="button" value="Login"></center></td>
                 </tr>
             </table>
         </form>
+        </div>
     </body>
 </html>
