@@ -1,10 +1,10 @@
-logo
+#logo
 {
-    background-color:rgb(76,76,255);
-    color:white;
-    border:1px solid white;
-    border-radius: 5px;
-    padding:4px;
+    height: 30px;
+}
+body
+{
+    margin: 0px;
 }
 div.sidebar
 {
@@ -13,7 +13,7 @@ div.sidebar
     top:0;
     bottom: 0;
     background-color:rgb(48,48,48);
-    max-width:150px;
+    max-width:170px;
     height: 725px;
 }
 div.btn
@@ -33,17 +33,17 @@ div.btn:hover
 }
 ul.header
 {
+    margin: 0px;
     list-style-type: none;
-    left:145px;
-    right:0;
-    top:0px;
+    left:160px;
     position: fixed;
     width:1437px;
-    background-color:rgba(76,76,255,0.8);
+    background-color:rgb(98,183,244);
 }
 ul.header li
 {
     display: inline;
+    padding: 0px 3px;
 }
 ul.header li input[type="text"]
 {
@@ -73,9 +73,80 @@ ul.header li a[class="btn2"]
 }
 ul.header li a[class="btn2"]:hover
 {
-    background-color:rgba(76,76,255,0.9);
+    background-color:rgb(0,3,107);
 }
 ::placeholder
 {
     font-size: 25px;
+}
+div.content-area
+{
+    border:1px solid black;
+    position: fixed;
+    overflow-y: scroll;
+    padding:0;
+    margin:0;
+
+    top:60;
+    left:10.5%;
+    right:5%;
+
+    width: 89.2%;
+    height: 100%;
+}
+tr.overall td.first-td
+{
+    width:550px;
+    padding:25px;
+    font-size: 25px;
+    border:1px solid green;
+}
+tr.overall td
+{
+    width:550px;
+    padding:200px;
+    border:1px solid red;
+}
+.button
+{
+    background-color:rgb(0,3,107);
+    color:white;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+.button:hover
+{
+    background-color:rgb(98,183,244);
+    cursor: pointer;
+}
+.addwidgets{
+    position: absolute;
+    padding:0;
+    margin:0;
+    
+    overflow-y: auto;
+    top:100;
+    left:500;
+    width: 700px;
+    height: 600px;
+    background-color:white;
+    border-radius: 25px;
+    font-size: 20px;
+    border:2px solid rgb(0,3,107);
+    transition-duration: top 0.5s;
+}
+.close
+{
+    background-color:rgb(98,183,244);
+    float:right;
+    padding: 10px;
+    color:white;
+    font-size: 20px;
+    border:none;
+}
+.close:hover
+{
+    background-color:rgb(0,3,107);
+    cursor: pointer;
 }
