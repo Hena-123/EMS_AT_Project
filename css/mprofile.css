@@ -1,0 +1,38 @@
+body > *:not(#profiletab) {
+}
+.profiletab
+{
+    position: absolute;
+    top:100;
+    left:35%;
+    font-size:20px;
+    border:1px solid black;
+    padding:20px;
+    opacity: 1;
+}
+table.profileTable tr td
+{
+    padding: 0px 10px;
+}
+table.profileTable tr td ::placeholder
+{
+    font-size: 15px;
+}
+table.profileTable tr td input
+{
+    width:250px;
+    height:35px;
+}
+.profile-close
+{
+    background-color: transparent;
+    float:right;
+    border:none;
+    color:rgb(192,192,192);
+    font-size: 20px;
+}
+.profile-close:hover
+{
+    color:rgb(105,105,105);
+    font-weight: bolder;
+}

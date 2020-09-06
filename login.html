@@ -1,7 +1,7 @@
 <html>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
-        <link rel="stylesheet" type="text/css" href="logincss.css">
+        <link rel="stylesheet" type="text/css" href="css/logincss.css">
         <title>Employee Monitoring System</title>
         <style>
         </style>
@@ -13,12 +13,13 @@
         <hr class="line">
         <br>
         <br><br><br>
-        <div class="content-area">
+        <div class="content-area" style="background-image: url('images/index_background1.jpg');background-attachment: fixed;
+                background-repeat: no-repeat;background-size: cover;">
             <div class="logintab">
             <form action="" method="post">
                 <table>
                     <tr>
-                        <th><img id="logo" src="time.png"></th>
+                        <th><img id="logo" src="images/time.png"></th>
                         <th><center>EMPLOYEE MONITORING SYSTEM</center></th>
                     </tr>
                     <tr>
@@ -43,16 +44,13 @@
                 var email=document.getElementById("email");
                 var pass=document.getElementById("password");
                 if(email.value=="manager@gmail.com" && pass.value=="manager"){
-                    console.log("manager");
-                    window.location.href="manager.html";
+                    window.location.href="manager.html?name=manager";
                 }
                 else if(email.value=="owner@gmail.com" && pass.value=="owner"){
-                    console.log("owner");
-                    window.location.href="owner.html";
+                    window.location.href="owner.html?name=owner";
                 }
                 else if(email.value=="employee@gmail.com" && pass.value=="employee"){
-                    console.log("employee");
-                    window.location.href="employee.html";
+                    window.location.href="employee.html?name=employee";
                 }
                 else{
                     email.value="";

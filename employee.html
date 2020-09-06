@@ -1,19 +1,231 @@
 <html>
     <head>
         <style>
+            @media (min-width:768px){
+                .c2{
+                    width: 500px;
+                }
+            }
+            @media (min-width:992px){
+                .c2{
+                    width: 800px;
+                }
+            }
         </style>
+        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap_4_5_2.min.css">
+        
+        <script src="bootstrap/Chart.min.js"></script>
+	<script src="bootstrap/utils.js"></script>
     </head>
     <body>
-        Employee Monitoring System
-        <input type="text" placeholder="Search your projects">
-        <input type="button" name="search" value="Search">
-        <a href="eprofile.html">Profile</a>
-        <a href="index.html">Logout</a>
-        <hr>
-        <div align="left">
-            <a href="employee.html">Dashboard</a><br>
-            <a href="listofprojects.html">My projects</a><br>
-            <a href="eprofile.html">My Account</a><br>
+        <nav class="navbar bg-dark navbar-dark fixed-top justify-content-start">
+            
+            <div class="input-group">
+                <a class="navbar-brand" href="#">
+                    <img src="images/time.png" style="height:30px;" alt="Logo">
+                </a>
+                
+                <a class="navbar-brand active" style="height:30px;"  href="#">E-MONITOR</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <input type="text" class="form-control" placeholder="Search your projects">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Go</button>
+                </div>
+                <button class="btn btn-light btn-logout ml-2" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="employee.html">Dashboard</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="listofprojects.html">My projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-20" href="eprofile.html">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br><br><br>
+        
+        <div class="container bg-primary text-white">
+            <h2 class=" p-3" id="welcome">Welcome</h2>
         </div>
+        
+        <div class="container bg-dark text-white">
+            <h4 >My Recent working Projects</h4>
+            
+            <div id="demo" class="carousel slide" data-ride="carousel">
+            
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <center>
+                            <div class="card bg-white" style="width:300px">
+                                <img class="card-img-top" src="images/p1.png" alt="Project 1" style="width:100%;height:100%;">
+                                <div class="card-body bg-primary" id="card1">
+                                    <h4 class="card-title">Project-1</h4>
+                                    <p class="card-text">This project is about to implement game application</p>
+                                    <a href="#" class="btn btn-light">See Project details</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="carousel-item">
+                        <center>
+                            <div class="card bg-white" style="width:300px">
+                                <img class="card-img-top" src="images/p2.png" alt="Project 2" style="width:100%;height:100%;">
+                                <div class="card-body bg-primary" id="card2">
+                                    <h4 class="card-title">Project-2</h4>
+                                    <p class="card-text">This project is about to implement mobile application</p>
+                                    <a href="#" class="btn btn-light">See Project details</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="carousel-item">
+                        <center>
+                            <div class="card bg-white" style="width:300px">
+                                <img class="card-img-top" src="images/p3.png" alt="Project 3" style="width:100%;height:100%;">
+                                <div class="card-body bg-primary" id="card3">
+                                    <h4 class="card-title">Project-3</h4>
+                                    <p class="card-text">This project is about to implement web application</p>
+                                    <a href="#" class="btn btn-light">See Project details</a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        <br>
+        </div>
+            
+        <br>
+        <div class="container bg-dark text-black">
+            <h4 class="text-white">My Progress</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Project-1 progress</h4>
+                            <canvas id="picard1"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Project-2 progress</h4>
+                            <canvas id="picard2"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Project-3 progress</h4>
+                            <canvas id="picard3"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Project-4 progress</h4>
+                            <canvas id="picard4"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        
+        <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script><script src="bootstrap/bootstrap.min.js"></script>
+        <script>
+            window.onload=init;
+            function init(){
+                console.log("hello");
+                const params = new URLSearchParams(window.location.search);
+                /*for (const param of params) {
+                    console.log(param);
+                }*/
+                if(params.has('name')){
+                    document.getElementById("welcome").innerHTML+=" "+params.get('name');
+                }
+                changeBackground();
+            }
+            function logout(){
+                window.location.href="login.html";
+            }
+            function changeBackground(){
+                var array=["bg-danger","bg-primary","bg-success","bg-warning"];
+                for (var i = 1; i <=4; i++) {
+                    var idx=Math.floor(Math.random()*array.length);
+                    document.getElementById("card" + i).classList.add(array[idx]);
+                }
+            }
+            
+            //#################3
+            var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						300,15,65,90,80
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green',
+					'Blue'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		  };
+            for(var i=1;i<=4;i++){
+                var ctx = document.getElementById("picard"+i).getContext('2d');
+			     window.myPie = new Chart(ctx, config);
+            }
+        </script>
     </body>
 </html>

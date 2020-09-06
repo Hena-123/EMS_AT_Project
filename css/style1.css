@@ -13,15 +13,30 @@ div.sidebar
     top:0;
     bottom: 0;
     background-color:rgb(48,48,48);
-    max-width:170px;
+    width:150px;
     height: 725px;
+}
+@media (max-width: 700px){
+    div.sidebar{
+        max-width: 120px;
+    }
+    div.btn{
+        font-size: 15px;
+    }
+}
+@media (min-width: 992px){
+    div.sidebar{
+        max-width: 190px;
+    }
+    div.btn{
+        font-size: 20px;
+    }
 }
 div.btn
 {
     color: white;
     text-align: center;
     padding: 10px 10px;
-    font-size:15px;
     cursor:pointer;
     background-color:transparent;
     border: none;

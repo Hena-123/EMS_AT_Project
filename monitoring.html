@@ -1,13 +1,12 @@
 <html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
-        <style>
-        </style>
-        <link rel="stylesheet" type="text/css" href="style1.css">
+        <title>Employee Monitoring System</title>
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
     </head>
     <body>
-        <title>Employee Monitoring System</title>
         <div class="sidebar" align="left">
-            <div class="btn"><logo>M</logo>ONITOR</div>
+            <div class="btn"><img id="logo"src="images/time.png"><br>E-MONITOR</div>
             <div class="btn" id="dashboard" onclick="location.href='manager.html'">Dashboard</div>
             <div class="btn" id="monitoring" onclick="location.href='monitoring.html'">Monitoring</div>
             <div class="btn" id="productivity" onclick="location.href='productivity.html'">Productivity</div>
@@ -16,12 +15,14 @@
         </div>
         <ul class="header">
             <li><a class="btn2" id="show">Show</a></li>
-            <li><input type="text" size="72" id="searchtext" placeholder="Search your projects or employee"></li>
+            <li><input type="text" size="68" id="searchtext" placeholder="Search your projects or employee"></li>
             <li><a class="btn2" id="search" onclick="location.href='mprofile.html'">Search</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='mprofile.html'">Profile</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='monitoringSettings.html'">Settings</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='index.html'">Logout</a></li>
         </ul>
+        <div class="content-area">
+        </div>
         <!--Select Employee:
         <datalist id="employees">
             <option value="Employee1">Employee1</option>

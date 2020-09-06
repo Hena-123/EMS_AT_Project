@@ -1,13 +1,12 @@
 <html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
-        <style>
-        </style>
-        <link rel="stylesheet" type="text/css" href="style1.css">
+        <title>Employee Monitoring System</title>
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
     </head>
     <body>
-        <title>Employee Monitoring System</title>
         <div class="sidebar" align="left">
-            <div class="btn"><logo>M</logo>ONITOR</div>
+            <div class="btn"><img id="logo"src="images/time.png"><br>E-MONITOR</div>
             <div class="btn" id="dashboard" onclick="location.href='manager.html'">Dashboard</div>
             <div class="btn" id="monitoring" onclick="location.href='monitoring.html'">Monitoring</div>
             <div class="btn" id="productivity" onclick="location.href='productivity.html'">Productivity</div>
@@ -16,38 +15,40 @@
         </div>
         <ul class="header">
             <li><a class="btn2" id="show">Show</a></li>
-            <li><input type="text" size="72" id="searchtext" placeholder="Search your projects or employee"></li>
+            <li><input type="text" size="68" id="searchtext" placeholder="Search your projects or employee"></li>
             <li><a class="btn2" id="search" onclick="location.href='mprofile.html'">Search</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='mprofile.html'">Profile</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='monitoringSettings.html'">Settings</a></li>
             <li><a class="btn2" id="dashboard" onclick="location.href='index.html'">Logout</a></li>
         </ul>
-        Select Employee:
-        <datalist id="employees">
-            <option value="Employee1">Employee1</option>
-            <option value="Employee2">Employee2</option>
-            <option value="Employee3">Employee3</option>
-        </datalist>
-        <input type="text" name="employee" list="employees"><br><br><br>
-        <table border="2">
-            <tr>
-                <th>Employee name</th>
-                <th>Email</th>
-                <th>Department</th>
-                <th>Last login time</th>
-                <th>Last login from</th>
-                <th>Status</th>
-                <th>Monitored</th>
-            </tr>
-            <tr>
-                <th>Jenifer</th>
-                <th>jenifer3459@gmail.com</th>
-                <th>Data Science</th>
-                <th>14:15:35</th>
-                <th>2 Days</th>
-                <th>Active</th>
-                <th>No</th>
-            </tr>
-        </table>
+        <div class="content-area">
+            Select Employee:
+            <datalist id="employees">
+                <option value="Employee1">Employee1</option>
+                <option value="Employee2">Employee2</option>
+                <option value="Employee3">Employee3</option>
+            </datalist>
+            <input type="text" name="employee" list="employees"><br><br><br>
+            <table border="2">
+                <tr>
+                    <th>Employee name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Last login time</th>
+                    <th>Last login from</th>
+                    <th>Status</th>
+                    <th>Monitored</th>
+                </tr>
+                <tr>
+                    <th>Jenifer</th>
+                    <th>jenifer3459@gmail.com</th>
+                    <th>Data Science</th>
+                    <th>14:15:35</th>
+                    <th>2 Days</th>
+                    <th>Active</th>
+                    <th>No</th>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
