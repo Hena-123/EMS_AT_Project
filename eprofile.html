@@ -1,13 +1,22 @@
 <html>
     <head>
         <style>
+            .sky_color{
+                background-color: rgb(98,183,244);
+            }
+            .dark_color{
+                background-color:rgb(48,48,48);
+            }
         </style>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="bootstrap/bootstrap.css">
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/bootstrap_4_5_2.min.css">
     </head>
     <body>
-        <nav class="navbar bg-dark navbar-dark fixed-top justify-content-start">
+        <nav class="navbar dark_color navbar-dark fixed-top justify-content-start">
             
             <div class="input-group">
                 <a class="navbar-brand" href="#">
@@ -22,9 +31,9 @@
                 
                 <input type="text" class="form-control" placeholder="Search your projects">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="submit">Go</button>
+                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i> Search</button>
                 </div>
-                <button class="btn btn-light btn-logout ml-2" onclick="logout()">Logout</button>
+                <button class="btn btn-light btn-logout ml-2" onclick="window.location.href='login.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
             </div>
             
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -45,8 +54,8 @@
         </nav>
         <br><br><br>
         
-        <div align="center">
-            <h2>Your Profile</h2>
+        <div align="center dark_color">
+            <h1>Your Profile</h1>
             <table border="2">
                 <tr>
                     <td colspan="2">Person Details</td>

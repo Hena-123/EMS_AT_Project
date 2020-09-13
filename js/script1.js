@@ -31,14 +31,14 @@ function addwidgets()
     div_element.appendChild(close);
     var br=document.createElement("br");
     div_element.appendChild(br);
+    div_element.style.backgroundColor='#F8F8F8';
     var center=document.createElement("center");
     var table=document.createElement("table");
-    table.style.backgroundColor='#e2e2e2';
     for(var i=0;i<=6;i++){
         var tr=document.createElement("tr");
         var td=document.createElement("td");
         var img=document.createElement("img");
-        img.setAttribute("src","No_Image_Available.jpg");
+        img.setAttribute("src","images/No_Image_Available.jpg");
         img.setAttribute("style","border-radius:25px;border:1px solid #323232;");
         td.appendChild(img);
         tr.appendChild(td);
@@ -50,6 +50,7 @@ function addwidgets()
         var rm_btn=document.createElement("input");
         rm_btn.type="button";
         rm_btn.value="Add to dashboard";
+        rm_btn.id=arr[i];
         rm_btn.setAttribute("w_name",arr[i]);
         rm_btn.setAttribute("onclick", "addToDashboard(this)");
         rm_btn.setAttribute("class", "close");
@@ -70,6 +71,8 @@ function addToDashboard(name){
     td.innerHTML=widget_name;
     tr.appendChild(td);
     table.appendChild(tr);
+    
+    closeWidgets();
 }
 function closeWidgets()
 {

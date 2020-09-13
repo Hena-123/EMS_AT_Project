@@ -1,13 +1,22 @@
 <html>
     <head>
         <style>
+            .sky_color{
+                background-color: rgb(98,183,244);
+            }
+            .dark_color{
+                background-color:rgb(48,48,48);
+            }
         </style>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="bootstrap/bootstrap.css">
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/bootstrap_4_5_2.min.css">
     </head>
     <body>
-        <nav class="navbar bg-dark navbar-dark fixed-top justify-content-start">
+        <nav class="navbar dark_color navbar-dark fixed-top justify-content-start">
             
             <div class="input-group">
                 <a class="navbar-brand" href="#">
@@ -22,9 +31,9 @@
                 
                 <input type="text" class="form-control" placeholder="Search your projects">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="submit">Go</button>
+                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i> Search</button>
                 </div>
-                <button class="btn btn-light btn-logout ml-2" onclick="logout()">Logout</button>
+                <button class="btn btn-light btn-logout ml-2" onclick="window.location.href='login.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
             </div>
             
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -38,14 +47,82 @@
                         <a class="nav-link" href="listofprojects.html">My projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-20" href="eprofile.html">My Account</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#profileModal">My Account</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <br><br><br>
         
-        <div class="container bg-dark text-white">
+        <div class="modal fade" id="profileModal">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                                
+                <div class="modal-content">
+                                    
+                    <div class="modal-header">
+                        <h3 class="modal-title"><center>Your Profile</center></h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                                    
+                    <div class="modal-body">
+                        <table class="table table-bordered table-responsive-sm">
+                            <tbody>
+                                <tr class="table-info">
+                                    <td colspan="2"><center>Personal Deatils</center></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="images/User.jpg" style="border:1px solid black;"></center></td>
+                                    <td>
+                                    <table class="table">
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td><input type="text" name="fname" class="form-control" placeholder="First Name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Name</td>
+                                            <td><input type="text" name="lname" class="form-control" placeholder="Last Name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><input type="email" name="email" class="form-control" placeholder="Email id"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Contact no.</td>
+                                            <td><input type="text" name="number" class="form-control" placeholder="Contact no."></td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td colspan="2"><center>Other Details</center></td>
+                                </tr>
+                                <tr>
+                                    <td>Department</td>
+                                    <td><input type="text" name="department" class="form-control" placeholder="Department"></td>
+                                </tr>
+                                <tr>
+                                    <td>Qualification</td>
+                                    <td><input type="text" name="qualification" class="form-control" placeholder="Qualification"></td>
+                                </tr>
+                                <tr>
+                                    <td>Post</td>
+                                    <td><input type="text" name="post" class="form-control" placeholder="Your Post"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                        <button type="button" class="btn btn-success"><i class="fas fa-check"></i> Save changes</button>
+                    </div>
+                                    
+                </div>
+                                
+            </div>
+        </div>
+        
+        <div class="container dark_color text-white">
             <h4 >My Projects</h4>
             <div class="row">
                 <div class="col-md-4">
@@ -101,6 +178,5 @@
         
         <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
         <script src="bootstrap/popper.min.js"></script><script src="bootstrap/bootstrap.min.js"></script>
-        <script>
     </body>
 </html>

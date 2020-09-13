@@ -1,26 +1,83 @@
 <html>
     <head>
+        <title>Employee Monitoring System</title>
         <style>
+            .sky_color{
+                background-color: rgb(98,183,244);
+            }
+            .dark_color{
+                background-color:rgb(48,48,48);
+            }
+            body{
+                background-image: url('images/signup.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .backgorund_color{
+                background-color: white;
+            }
         </style>
+        
+        <!-- For ICONS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap_4_5_2.min.css">
     </head>
     <body>
-        <h1>Employee Monitoring System</h1>
-        <hr>
-        <form action="" method="post">
-            <table border="2">
-                <tr>
-                    <td colspan="2"><input type="text" id="username" name="username" placeholder="Username" autofocus required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="text" id="email" name="email" placeholder="email address" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="password" id="password" name="password" placeholder="password" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="button" name="button" id="button" value="Sign Up"></td>
-                </tr>
-            </table>
-        </form>
+        <br><br>
+        <div class="container rounded w-50 backgorund_color">
+            <center><h2>Sign Up</h2></center>
+                <form class="was-validated" action="" method="post">
+                    <div class="form-group row p-3">
+                        <label for="name" class="col-md-2 col-form-label">Name</label>
+                        <div class="col-md-10">
+                            <input type="text" id="name" class="form-control" placeholder="Enter Name" autofocus required>
+                            <div class="invalid-feedback">Please provide name.</div>
+                            <div class="valid-feedback">valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group row p-3">
+                        <label for="username" class="col-md-2 col-form-label">Username</label>
+                        <div class="col-md-10">
+                            <input type="text" id="username" class="form-control" placeholder="Enter Username" required>
+                            <div class="invalid-feedback">Please provide username.</div>
+                            <div class="valid-feedback">valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group row p-3">
+                        <label for="password" class="col-md-2 col-form-label">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="password" class="form-control" placeholder="Enter Password" required>
+                            <div class="invalid-feedback">Please provide password.</div>
+                            <div class="valid-feedback">valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group row p-3">
+                        <label for="conpassword" class="col-md-2 col-form-label">Confirm-Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="conpassword" class="form-control" placeholder="Enter Confirm Password" required>
+                            <div class="invalid-feedback">Please provide confirm password.</div>
+                            <div class="valid-feedback">valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group row p-3">
+                        <label for="email" class="col-md-2 col-form-label">Email-ID</label>
+                        <div class="col-md-10">
+                            <input type="email" id="email" class="form-control" placeholder="Enter Email ID" required>
+                            <div class="invalid-feedback">Please provide email-id.</div>
+                            <div class="valid-feedback">valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group row p-3">
+                            <button type="submit" class="btn btn-success">Submit</button>&nbsp;
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </form>
+        </div>
+        <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
     </body>
 </html>

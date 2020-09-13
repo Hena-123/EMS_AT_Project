@@ -24,7 +24,7 @@
         <div align="center" class="profiletab" id="profiletab">
             <div class="title">
                 <label>My Profile</label>
-                <input type="button" value="X" class="profile-close">
+                <input type="button" value="X" class="profile-close" onclick="closeProfileTab()">
             </div>
             <table class="profileTable" border="2">
                 <tr>
@@ -79,5 +79,13 @@
                 </tr>
             </table>
         </div>
+        <script>
+            function closeProfileTab()
+            {
+                var div=document.querySelector("#profiletab");
+                document.body.removeChild(div);
+                window.location="manager.html";
+            }
+        </script>
     </body>
 </html>
