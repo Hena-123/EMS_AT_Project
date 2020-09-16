@@ -1,25 +1,35 @@
 <html>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <head>
+        <style>
+            .sm-size{
+                font-size: 0.73em;
+            }
+        </style>
         <title>Employee Monitoring System</title>
+        
+        <!-- For ICONS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
         <link rel="stylesheet" type="text/css" href="css/style1.css">
     </head>
     <body>
         <div class="sidebar" align="left">
             <div class="btn"><img id="logo"src="images/time.png"><br>E-MONITOR</div>
             <div class="btn" id="dashboard" onclick="location.href='manager.html'">Dashboard</div>
-            <div class="btn" id="monitoring" onclick="location.href='monitoring.html'">Monitoring</div>
-            <div class="btn" id="productivity" onclick="location.href='productivity.html'">Productivity</div>
-            <div class="btn" id="employees" onclick="location.href='listofemployees.html'">Employees</div>
-            <div class="btn" id="profile" onclick="location.href='mprofile.html'">My Account</div>
+            <div class="btn" id="monitoring" onclick="location.href='monitoring.html'"><i class="fas fa-tv"></i> Monitoring</div>
+            <div class="btn" id="productivity" onclick="location.href='productivity.html'"><i class="fas fa-industry"></i> Productivity</div>
+            <div class="btn" id="employees" onclick="location.href='listofemployees.html'"><i class="fas fa-users"></i> Employees</div>
+            <div class="btn" id="profile" onclick="location.href='mprofile.html'"><i class="fas fa-user-alt"></i> Account</div>
         </div>
         <ul class="header">
             <li><a class="btn2" id="show">Show</a></li>
             <li><input type="text" size="72" id="searchtext" placeholder="Search your projects or employee"></li>
-            <li><a class="btn2" id="search" onclick="location.href='#'">Search</a></li>
-            <li><a class="btn2" id="dashboard" onclick="location.href='mprofile.html'">Profile</a></li>
-            <li><a class="btn2" id="dashboard" onclick="location.href='monitoringSettings.html'">Settings</a></li>
-            <li><a class="btn2" id="dashboard" onclick="location.href='login.html'">Logout</a></li>
+            <li><a class="btn2" id="search" onclick="location.href='#'"><i class="fas fa-search"></i></a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='mprofile.html'"><i class="fas fa-user-alt"></i></a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='monitoringSettings.html'"><i class="fas fa-cog"></i></a></li>
+            <li><a class="btn2" id="dashboard" onclick="alert('Print the page')"><i class="fas fa-ellipsis-v"></i></a></li>
+            <li><a class="btn2" id="dashboard" onclick="location.href='login.html'"><i class="fas fa-sign-out-alt"></i></a></li>
         </ul>
         <div class="content-area">
             <div class="dashboard">

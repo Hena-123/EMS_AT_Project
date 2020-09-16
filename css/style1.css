@@ -13,7 +13,7 @@ div.sidebar
     top:0;
     bottom: 0;
     background-color:rgb(48,48,48);
-    width:160px;
+    width:190px;
     height: 725px;
 }
 div.btn
@@ -24,7 +24,7 @@ div.btn
     cursor:pointer;
     background-color:transparent;
     border: none;
-    font-size: 25px;
+    font-size: 23px;
 }
 div.btn:hover
 {
@@ -35,7 +35,7 @@ ul.header
     margin: 0px;
     padding-left: 0px;
     list-style-type: none;
-    left:160px;
+    left:190px;
     position: fixed;
     width:1375px;
     background-color:rgb(98,183,244);
@@ -157,7 +157,7 @@ tr.overall td
 }
 @media (max-width: 576px){
     div.sidebar{
-        max-width: 80px;
+        max-width: 110px;
     }
     div.btn{
         font-size: 15px;
@@ -165,7 +165,7 @@ tr.overall td
 }
 @media (min-width: 576px){
     div.sidebar{
-        max-width: 100px;
+        max-width: 130px;
     }
     div.btn{
         font-size: 18px;
@@ -173,26 +173,26 @@ tr.overall td
 }
 @media (min-width: 768px){
     div.sidebar{
-        max-width: 120px;
+        max-width: 150px;
     }
     div.btn{
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 @media (min-width: 992px){
     div.sidebar{
-        max-width: 140px;
+        max-width: 170px;
     }
     div.btn{
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 @media (min-width: 1200px){
     div.sidebar{
-        max-width: 160px;
+        max-width: 190px;
     }
     div.btn{
-        font-size: 25px;
+        font-size: 23px;
     }
     ul.header{
         width:1375px;

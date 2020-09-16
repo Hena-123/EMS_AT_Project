@@ -3,4 +3,5 @@ $(document).ready(function(){
     function giveProfile(){
         
     }
+    alert("Hello....");
 });
